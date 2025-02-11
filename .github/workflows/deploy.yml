@@ -44,7 +44,7 @@ jobs:
 
     - name: Initialize Elastic Beanstalk Application
       run: |
-        eb init -p docker Pierre-app-env --region eu-west-1
+        eb init -p docker pierre-app --region eu-west-1
 
     - name: Deploy to Elastic Beanstalk
       run: |
