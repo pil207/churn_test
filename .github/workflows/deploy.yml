@@ -1,4 +1,4 @@
-vname: CI/CD for Churn Prediction
+name: CI/CD for Churn Prediction
 
 on:
   push:
