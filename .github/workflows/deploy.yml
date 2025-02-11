@@ -36,15 +36,15 @@ jobs:
 
     - name: Build Docker Image
       run: |
-        docker build -t churn-pierre .
+        docker build -t pierre-app .
 
     - name: Run Tests in Docker
       run: |
-        docker run churn-pierre pytest -v
+        docker run pierre-app pytest -v
 
     - name: Initialize Elastic Beanstalk Application
       run: |
-        eb init -p docker Churn-Pierre-env --region eu-west-1
+        eb init -p docker Pierre-app-env --region eu-west-1
 
     - name: Deploy to Elastic Beanstalk
       run: |
